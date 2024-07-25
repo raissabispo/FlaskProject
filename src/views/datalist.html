@@ -1,4 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Funcionários</title>
+</head>
+<body>
+    <h1>Lista de Funcionários</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>CPF</th>
+            <th>Nome</th>
+            <th>Posição</th>
+        </tr>
+        {% for emp in employee %}
+        <tr>
+            <td>{{ emp.id }}</td>
+            <td>{{ emp.cpf }}</td>
+            <td>{{ emp.name }}</td>
+            <td>{{ emp.position }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+<!-- 
 <h1> Lista de Funcionários </h1>
-{% for employee in employees %}
-<h3>{{employee}}</h3><hr>
-{% endfor %}
+{% for emp in employee %}
+<h3>{{emp}}</h3><hr>
+{% endfor %} -->
